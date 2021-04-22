@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+
+/*container*/
+
+.container{
+    width: 98.54vw;
+    overflow: hidden;
+    background-color: #171523;
+}
+
+/*nav*/
+
+nav{
+    width: 100%;
+    background-color: #1f1430;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+}
+
+nav a{
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li{
+    margin: 10px;
+}
+nav ul a{
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    color:white ;
+    background: #f17f7f;
+    border-radius: 160px;
+}
+
+nav ul a:hover{
+    color: black;
+    background:#88ffd4 ;
+    border-radius: 160px;
+    box-shadow: white 5px 3px 4px;
+}
+
+/*header*/
+
+header{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.fundo-imagem{
+    height: 450px;
+    width: 450px;
+    border-radius: 450px;
+    background: #1f1430;
+    background: linear-gradient(120deg, #1f1430 20%, #3EECAC 100%);
+    top: -200px;
+    left: -100px;
+    position: relative;
+    animation: animacao1 1s;
+}
+
+@keyframes animacao1{
+    0%{
+       transform: translatex(-500px);
+    }
+    100%{
+        transform: translatex(0px);
+    }
+}
+
+.fundo-imagem img{
+    top: 300px;
+    left: 150px;
+    height: 200px;
+    position: relative;
+    animation: animacao2 2s;
+}
+
+@keyframes animacao2{
+    0%{
+       transform: translatey(600px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+header .texto{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header h1{
+    font-size: 2rem;
+    background: -webkit-linear-gradient(20deg, #3EECAC 10%, #e06060 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animacao3 3s ;
+}
+
+@keyframes animacao3 {
+    0%{
+        transform: translatex(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+
+header p{
+    color: white;
+    text-transform: capitalize;
+    animation: animacao4 7s ;
+}
+
+@keyframes animacao4 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*conhecimentos*/
+
+#conhecimentos{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#conhecimentos h1{
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: #3EECAC 5px 5px 10px;
+    text-transform: uppercase;
+}
+
+#conhecimentos .bloco{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#conhecimentos .itens{
+    width: 250px;
+    margin: 10px auto 25px auto;
+    background-color: #fff;
+    box-shadow: #3EECAC 5px 2px 10px ;
+    border-radius: 10px;
+    justify-content: center;
+    transform: scale(1);
+    z-index: 1;
+    padding: 10px;
+}
+#conhecimentos .fab{
+    font-size: 2rem;
+}
+#conhecimentos .itens:hover{
+    background-color:#3EECAC ;
+    box-shadow: white 5px 5px 10px ;
+    color: white;
+    transform: scale(1.1) translateZ(5px);
+    z-index: 2;
+}
+
+#conhecimentos h2{
+    text-transform: uppercase;
+
+}
+
+/*meusprojetos*/
+
+#meusprojetos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#meusprojetos h1{
+    color: white;
+    font-size: 2rem;
+    text-shadow: #3EECAC 5px 5px 10px;
+    text-transform: uppercase;
+}
+
+#meusprojetos .bloco{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+#meusprojetos .itens{
+    width: 300px;
+    height: 300px;
+    margin: 10px auto 10px auto;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.3;
+    filter: blur(2px);
+    object-fit: cover;
+}
+
+#meusprojetos .itens:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: #3EECAC 5px 5px 10px ;
+    filter: blur(0px);
+}
+
+#meusprojetos img{
+    width: 250px;
+    height: 250px ;
+    background: gray;
+}
+
+/*contato*/
+
+#contato{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#contato h1{
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px;
+    text-shadow: #3EECAC 5px 5px 10px;
+    text-transform: uppercase;
+}
+
+#contato p{
+    color: white;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+}
+
+#contato ul{
+    width: 50%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    color: white;
+}
+#contato ul li{
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+#contato ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 2rem;
+    color: #e06060;
+}
+
+#contato a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+
+#contato a:hover{
+    text-decoration: none;
+    color: #3EECAC;
+    text-shadow: gray 1px 1px 5px;
+}
+
+
+@media screen and (max-width:360px){
+    
+    /*container*/
+
+    .container{
+       width: 100vw;
+       overflow: hidden;
+    }
+
+    /*nav*/
+
+    nav{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 15px;
+        
+    }
+
+    nav a{
+        font-size: 1.5rem;
+    }
+
+    nav ul{
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+        
+    }
+
+    nav ul li{
+        margin: 10px;
+    }
+
+    /*header*/
+
+    header{
+        width: 100%;
+        position: relative;
+    }
+
+    header .fundo-imagem{
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+        position: absolute;
+        background: #1f1430;
+        background: linear-gradient(120deg, #1f1430 20%, #3EECAC 100%);
+        z-index: 1;
+    }
+
+    header h1{
+        position: relative;
+        z-index: 2;
+    }
+
+    header p{
+        position: relative;
+        z-index: 2;
+    }
+
+
+}
